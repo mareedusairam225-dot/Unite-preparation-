@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Unite Preparation - Your personalized JEE Main and Class 12 Boards study planner.">
+
+  <title>Unite Preparation | Your Study Universe</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      background:
+        radial-gradient(
+          ellipse at 20% 20%,
+          #173b83 0%,
+          transparent 45%
+        ),
+        radial-gradient(
+          ellipse at 85% 80%,
+          #102b62 0%,
+          transparent 45%
+        ),
+        #050b1e;
+    }
+
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ffffff20;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #91caff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 70px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #79baff;
+    }
+
+    p {
+      color: #b8c8e8;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 55px;
+    }
+
+    .card {
+      padding: 35px;
+      text-align: left;
+      background: #ffffff0c;
+      border: 1px solid #ffffff25;
+      border-radius: 22px;
+      backdrop-filter: blur(15px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #5aa8ff;
+    }
+
+    .card h2 {
+      color: #91caff;
+    }
+
+    button {
+      padding: 14px 25px;
+      border: none;
+      border-radius: 12px;
+      background: #2878ed;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #4997ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #8ea4c8;
+      border-top: 1px solid #ffffff20;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">✦ UNITE PREPARATION</div>
+    <button onclick="showMessage()">
+      Sign in with Google
+    </button>
+  </header>
+
+  <main class="container">
+
+    <h1>
+      Your Preparation.<br>
+      <span class="highlight">Your Universe.</span>
+    </h1>
+
+    <p>
+      Your intelligent study companion for
+      JEE Main and Class 12 Board examinations.
+      Plan smarter, revise effectively,
+      and achieve your goals.
+    </p>
+
+    <div class="cards">
+
+      <section class="card">
+        <h2>🚀 JEE Main Preparation</h2>
+        <p>
+          Personalized chapter-wise study schedules,
+          topic revision, PYQ practice,
+          and progress tracking.
+        </p>
+        <button onclick="showMessage()">
+          Start JEE Preparation
+        </button>
+      </section>
+
+      <section class="card">
+        <h2>📘 Class 12 Boards</h2>
+        <p>
+          Structured NCERT study plans,
+          important derivations,
+          board questions,
+          and daily revision.
+        </p>
+        <button onclick="showMessage()">
+          Start Board Preparation
+        </button>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Unite Preparation |
+    Built for ambitious students.
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert(
+        "Welcome to Unite Preparation! " +
+        "Google Sign-In and AI study planning " +
+        "will be connected in the next step."
+      );
+    }
+  </script>
+
+</body>
+</html>
